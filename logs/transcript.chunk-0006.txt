@@ -1,0 +1,4 @@
+APPEND games/bluebaum_wei.md
+The commentators highlighted Matthias Bluebaum's emergence as a "dark horse" with a strong score against the field's top candidates, noting his status as a known figure outside the standard top-level round-robin circuit. He was described as a "new face" in a 2700+ field, adding excitement to the mix. The discussion focused on his performance in the previous round (Vi) three months prior, where he outplayed several top candidates, suggesting he is capable of adjusting to the high-stakes environment of the 2026 Candidates. The narrative emphasized that while youth often confers stamina advantages, this specific event's intensity challenges that notion, and Bluebaum's presence adds a unique psychological element to the competition.
+
+CURRENT_GAME=bluebaum_wei

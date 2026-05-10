@@ -1,0 +1,4 @@
+APPEND games/caruana_nakamura.md
+The commentators framed the event as a grueling test of endurance, noting that while the World Cup is longer, this Candidates event is arguably harder in terms of mental and physical toll. They highlighted the unique "open" field structure where under-26s compete with veterans, challenging the idea that youth guarantees stamina. The narrative emphasized the psychological weight of playing in a convergence of two major championships, where the sheer volume of qualifiers and the need to perform across three weeks can erode confidence for even seasoned players. The discussion touched on the financial stakes, mentioning a fund of 700,000 euros for the winner, which adds a layer of high-stakes pressure beyond just the match itself.
+
+CURRENT_GAME=caruana_nakamura

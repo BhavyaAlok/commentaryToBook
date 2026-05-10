@@ -1,0 +1,12 @@
+APPEND games/praggnanandhaa_giri.md
+[00:49:22 - 00:49:30] Anish is delaying Knight C6, which starts with G6—a subtle move that forces the opponent to react to potential Bishop B5 checks. The commentary notes that not playing Knight to C6 would miss out on a sharp position, though the line involving Bishop C4 and Knight C6 is also on the board but deemed less scary.
+
+[00:49:34 - 00:49:36] Black responds with Knight C6, aiming to take on the double pawns and avoid the cramped horsey created by taking A4.
+
+[00:50:06 - 00:50:10] Praknanda plays pawn to A4, a slightly unusual move that, if taken, would cramp the opponent's development.
+
+[00:50:20 - 00:50:22] Anish counters with Knight C6, arguing that the opponent can no longer double pawns and that A4 did not help with development.
+
+[00:50:28 - 00:50:32] Praknanda castles, blitzing out the moves and stating he has studied this in great detail.
+
+CURRENT_GAME=praggnanandhaa_giri

@@ -1,0 +1,4 @@
+APPEND games/bluebaum_wei.md
+[00:31:16 - 00:31:18] The commentators seem to be hinting at a specific tactical or psychological angle, though the exact nature of the "will be tough" discussion remains slightly ambiguous without further board context.
+
+CURRENT_GAME=bluebaum_wei

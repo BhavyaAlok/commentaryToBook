@@ -1,0 +1,8 @@
+APPEND games/praggnanandhaa_giri.md
+[00:50:22 - 00:50:24] Praknanda counters with "you can no longer double my pawns," noting that A4 didn't help development.
+[00:50:28 - 00:50:32] He castles, blitzing out the moves and stating he has studied this in great detail.
+[00:50:44 - 00:50:46] The commentators questioned whether he actually cares if there's a bishop on B5, suggesting he might chase it away or provoke a bishop take on C6.
+[00:50:50 - 00:50:52] A6 on the board is noted as a potential response, though the commentary suggests it might not return to the board.
+[00:51:12 - 00:51:14] White played A4, which is described as kind of useful s (sic), though the move order and tactical nuances remain slightly unclear.
+
+CURRENT_GAME=praggnanandhaa_giri

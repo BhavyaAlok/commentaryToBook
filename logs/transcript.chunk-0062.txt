@@ -1,0 +1,4 @@
+APPEND games/zhu_tan.md
+Zhu Jiner's aggressive intent to abandon the e5 square, allowing White to control the center, contrasts sharply with Tan Zhongyi's firm defense on e5. Zhu's plan involves pushing f6-f5, but the discussion notes that White can counter with Nb5 or Nxd5. Zhu is described as "completely abandoning" the e5 square, suggesting a shift in the center's dynamic. The analysis emphasizes Zhu's fluid move order, weighing options like Nd4 or Nc3, contrasting with Tan's solid defense. The narrative underscores the high stakes of the women's tournament, where the pace is expected to be quick, contrasting with the deliberate tactical battle unfolding. The transcript notes Zhu's confidence in his plan versus the practical problems of executing it against a solid defense.
+
+CURRENT_GAME=zhu_tan

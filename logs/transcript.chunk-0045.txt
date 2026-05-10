@@ -1,0 +1,16 @@
+APPEND games/bluebaum_wei.md
+[00:57:42 - 00:57:44] The commentary pivots to Bluebaum's opening repertoire, noting he is the first Chinese participant since the last candidates to play.
+[00:57:52 - 00:57:54] He is identified as the first German since 1991 to make the candidates, highlighting his long-standing presence in the tournament.
+[00:58:02 - 00:58:04] The discussion shifts to the specific opening he is likely to play, which the annotator assumes is his main weapon.
+[00:58:04 - 00:58:06] The commentary suggests the opening shouldn't be a surprise to either Bluebaum or Wei, given their recent form.
+[00:58:06 - 00:58:08] Bluebaum is described primarily as a D4 player, though he has recently deviated from this style with one of three games.
+[00:58:10 - 00:58:12] He has played C4 and D4 recently, with the current game assumed to be his main or one of his main weapons.
+[00:58:16 - 00:58:18] The commentary identifies the opening as the infamous Semi-Tarash, Wesley So, Lila Zero, or Tarash.
+[00:58:20 - 00:58:22] The annotator notes uncertainty about the specific name used for this line but confirms it is a topical modern chess line.
+[00:58:24 - 00:58:26] The commentary speculates on the structure, suggesting C5 or C4 where C takes D5 or D4.
+[00:58:30 - 00:58:32] The line is described as Queen taking D4, which is a known tactical motif in these lines.
+[00:58:32 - 00:58:34] The commentary mentions that C takes D4 is a known variation in this specific line.
+[00:58:34 - 00:58:36] The annotator notes that the Queen taking D4 is another candidate line within the Semi-Tarash family.
+[00:58:36 - 00:58:38] The commentary concludes by suggesting the line is one of the most exciting and topical options in modern chess.
+
+CURRENT_GAME=bluebaum_wei

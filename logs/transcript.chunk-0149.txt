@@ -1,0 +1,4 @@
+APPEND games/divya_humpy.md
+White's 4. QxQ+ is dismissed by commentators as "not a 4" and "mildly unpleasant," lacking the crushing power of a true sacrifice. Instead, the discussion highlights 4. Bp6 as a more "decent" alternative, though it is not checkmate. The analysis emphasizes that while the sacrifice looks "nice" for White, it fails to deliver the intended checkmate or decisive advantage, appearing merely "unpleasant" rather than winning. The commentary suggests White might try 4. Qg3, a more standard queen move, or attempt to bring additional pieces into play to create a "draw some arrows" situation, but ultimately concludes that the position remains a standard position in Goryachkina against Tan Shogi (likely a transcription error for Katarina Lachnow), focusing on the tactical failure of the sacrifice.
+
+CURRENT_GAME=games/divya_humpy.md

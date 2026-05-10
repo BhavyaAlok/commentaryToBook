@@ -1,0 +1,10 @@
+APPEND games/bluebaum_wei.md
+[00:34:31] The pairing of Fabiano Caruana and Hikaru Nakamura is a classic clash of two top-tier American talents, with Nakamura currently holding the highest rating advantage in the field.
+
+[00:34:51] While Caruana is the slight favorite in the overall standings, the narrative has shifted toward the psychological resilience of Hikaru, who has shown an unafraid willingness to fight for every point on the board.
+
+[00:35:01] The commentators seem to be hinting at a specific tactical or psychological angle, though the exact nature of the "will be tough" discussion remains slightly ambiguous without further board context.
+
+[00:35:11] Hikaru's recent performance against Fabiano in classical chess has been impressive, suggesting he is capable of handling the pressure of a high-stakes match against a top European opponent.
+
+CURRENT_GAME=bluebaum_wei

@@ -1,0 +1,4 @@
+APPEND games/vaishali_bibisara.md
+Vaishali Rameshbabu recalls a backup line, moving Queen to d3 to resolve a traffic issue, though the commentary remains uncertain about the precise motivation behind this novelty move. The discussion highlights the preference for Bishop e3 over Queen d3, noting that while Bishop e3 is the most popular choice, the exact timing and square for the Queen's move remain unclear. The analysis suggests the position features traffic and is not merely a Van Hal game, yet the specific tactical plan behind the Queen's retreat is not fully confirmed.
+
+CURRENT_GAME=games/vaishali_bibisara.md

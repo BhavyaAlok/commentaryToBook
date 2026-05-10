@@ -1,0 +1,4 @@
+APPEND games/bluebaum_wei.md
+The commentators dismissed White's 4. QxQ+ as "not a 4" and "mildly unpleasant," noting it lacked the crushing power of a true sacrifice. Instead, they highlighted 4. Bp6 as a more "decent" alternative, though it failed to deliver checkmate. The analysis suggests White might try 4. Qg3, a more standard queen move, or attempt to bring additional pieces into play to create a "draw some arrows" situation.
+
+CURRENT_GAME=games/bluebaum_wei.md

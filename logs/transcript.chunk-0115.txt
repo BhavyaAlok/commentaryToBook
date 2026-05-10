@@ -1,0 +1,4 @@
+APPEND games/sindarov_esipenko.md
+The commentary pivots to a specific tactical sequence where Black's 4...h5 is met by White's 5. f4, a "beautiful rejoinder" that forces Black to recapture with 5...fxe4. Black's 6...fxe4 is described as "mean," yet the position remains "some trouble" for Black. White's 7. QxQ+ is dismissed by commentators as "not a 4" and "mildly unpleasant," lacking the crushing power of a true sacrifice. Instead, the discussion highlights 7. Bp6 as a more "decent" alternative, though it is not checkmate. The analysis suggests White might try 7. Qg3, a more standard queen move, or attempt to bring additional pieces into play to create a "draw some arrows" situation. Ultimately, the position remains a "standard position in Goryachkina against Katarina Lachnow" (likely a transcription error for Tan Shogi), underscoring Sindarov's tactical superiority and leaving the outcome uncertain.
+
+CURRENT_GAME=games/sindarov_esipenko.md

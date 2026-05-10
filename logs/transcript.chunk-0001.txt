@@ -1,0 +1,4 @@
+APPEND games/setting_the_stage.md
+The commentators set the tone for the 2026 FIDE Candidates, emphasizing the event's seriousness and the high stakes of the World Championship match alongside this tournament. They noted the "open" nature of the field, with a significant portion of players under 26, creating a dynamic atmosphere. The speakers expressed genuine excitement, describing the venue as a "beautiful place" and highlighting the rich storylines available. While the field's openness is noted, the focus remains on the competitive spirit and the unique opportunity to witness two major championships in one event.
+
+CURRENT_GAME=setting_the_stage

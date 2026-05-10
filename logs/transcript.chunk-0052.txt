@@ -1,0 +1,4 @@
+APPEND games/sindarov_esipenko.md
+> The 20-year-old Uzbek sensation Sindarov is described as an "absolute demon calculator" who rarely makes mistakes, contrasting with his usual tactical approach. He began the game with a Queen's Gambit Declined, but the position evolved into a rigid, sharp structure. The transcript notes that while Sindarov is generally tactically minded, today's game felt particularly sharp, suggesting he successfully navigated the opening into a complex middlegame.
+
+CURRENT_GAME=sindarov_esipenko

@@ -1,0 +1,15 @@
+APPEND games/bluebaum_wei.md
+[00:58:24 - 00:58:26] The commentators are debating the specific name for this line, noting uncertainty about whether it's called Lila Zero, Tarash, or a new variation, but confirming it is a topical modern chess line.
+[00:58:30 - 00:58:32] They suggest the structure involves C5 or C4, with White taking D5 or D4, and Black responding with E4 or D4.
+[00:58:34 - 00:58:36] One candidate line mentioned is Queen taking D4, which is a known tactical motif in these Semi-Tarash lines.
+[00:58:36 - 00:58:38] The commentary speculates that if Black plays E4, White might play D4, leading to a complex position where Black can potentially draw.
+[00:58:40 - 00:58:42] However, the commentators note that if White plays E4, Black can counter with D4, creating a different dynamic.
+[00:58:44 - 00:58:46] The discussion highlights that White players have struggled to tame this "beast" opening recently, making it a main weapon for Black.
+[00:58:50 - 00:58:52] Bluebaum specifically played Ponte E4 recently in a Vaikansi game against Hans Niemann, which resulted in a quick draw.
+[00:58:54 - 00:58:56] Despite the recent success with Ponte E4, Bluebaum is now considering other lines, specifically looking at Bishop G5 and Bishop to E7.
+[00:59:00 - 00:59:02] He is debating whether to play Ponte E3 (short castle) or Bishop to E7, noting that the isolated pawn in the E3 structure might be a factor.
+[00:59:04 - 00:59:06] The annotator suggests that while the E3 structure looks favorable due to the isolated pawn, deep analysis with computers often reveals nuances that are hard to see quickly.
+[00:59:10 - 00:59:12] The commentary points out that the move order seems fine, but the specific tactical execution of the Queen taking D4 motif remains a key point of contention.
+[00:59:14 - 00:59:16] The discussion concludes that White players have been struggling to tame this opening recently, making it a main weapon for Black.
+[00:59:18 - 00:59:20] The annotator notes that while the E3 structure looks favorable due to the isolated pawn, deep analysis with computers often reveals nuances that are hard to see quickly.
+[00:59:22 - 00:59:24] The commentary suggests that the move order seems fine, but the specific tactical execution of the Queen taking D

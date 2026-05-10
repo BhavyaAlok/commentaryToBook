@@ -1,0 +1,22 @@
+APPEND games/praggnanandhaa_giri.md
+[00:48:30 - 00:48:32] The line mentioned is a Grand Prix attack, specifically a variation involving D6, which allows White a slightly better version of the Sicilian compared to the more common E4-E5 Berlin or Petra lines. The transcript highlights that while the D6 line is considered harmless if Black doesn't play D6 immediately, it creates a transposition proof where Black can still choose E6-D5 or G6-BG7, leading to different structures. The annotator points out that after D6, the line is not that common at the top level, yet Prague is very familiar with it, suggesting a potential surprise element. The commentary suggests that Anish might be chuckling because he is looking at a position he has never looked at in his life, implying a high degree of novelty and perhaps a bit of amusement at the sheer difficulty or the specific theoretical landscape involved.
+
+[00:48:34 - 00:48:36] and this is what I get
+[00:48:36 - 00:48:38] maybe that precise
+[00:48:38 - 00:48:40] kind of feeling but yeah
+[00:48:40 - 00:48:42] it's a very
+[00:48:42 - 00:48:44] unusual terrain I think for
+[00:48:44 - 00:48:46] top level games I think the Grand Prix
+[00:48:46 - 00:48:48] is much more in use
+[00:48:48 - 00:48:50] in
+[00:48:50 - 00:48:52] when was the last time you've seen a
+[00:48:52 - 00:48:54] Grand Prix
+[00:48:54 - 00:48:56] in a game in an elite
+[00:48:56 - 00:48:58] round robin the answer is probably
+[00:48:58 - 00:49:00] kind of never right it's extremely rare
+[00:49:00 - 00:49:02] I recall a game
+[00:49:02 - 00:49:04] Jobava Giri from the
+[00:49:04 - 00:49:06] European team championship
+[00:49:06 - 00:49:08] not exactly an elite round robin
+[00:49:08 - 00:49:10] I think it's sometimes used but it's
+[00:49:10 - 00:49:12

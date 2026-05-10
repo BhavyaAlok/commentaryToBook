@@ -1,0 +1,17 @@
+APPEND games/praggnanandhaa_giri.md
+[00:52:22 - 00:52:24] The position feels sharp, with Black having a chance to force Anish to think independently early on.
+[00:52:42 - 00:52:44] It looks like a sharp position where White has a chance to force Anish to think by himself quite early.
+[00:52:50 - 00:52:52] This is a very good choice for White.
+[00:52:56 - 00:53:00] Anish no longer seems smirking about things; he is clearly engaged.
+[00:53:00 - 00:53:02] Bx6 Bx6 is a candidate move that annoyed him, as it forces a trade and potentially weakens his structure.
+[00:53:06 - 00:53:08] I'm sure it's still sound, but you do realize you're in for a bit of a bumpy ride if you have to calculate your way move by move.
+[00:53:12 - 00:53:14] Stockfish obviously has prepared this in great detail, so the line is well-known.
+[00:53:16 - 00:53:18] The commentators seemed to prefer the classical line with pawns on A2, A7, and the bishop on C8, though it's not strictly necessary.
+[00:53:22 - 00:53:24] One possible point is that the classical line is not supposed to be much of anything for White to firm up.
+[00:53:24 - 00:53:26] The line that everybody who has ever looked at the Grand Prix probably is aware of is something like E6 D3, Ng7, and we go in with a 5 right.
+[00:53:26 - 00:53:28] Absolutely yeah, but yeah D3, Knight out, and then a 5.
+[00:53:30 - 00:53:32] Black can react or even maybe in some cases just completely ignore the appearance of that pawn if you do it for too long it probably will become quite awkward.
+[00:53:32 - 00:53:34] I guess maybe actually quite risky to play E5 if you don't have a clear plan.
+[00:53:34 - 00:53:36] The line that everybody who has ever looked at the Grand Prix probably is aware of is something like E6 D3, Ng7, and we go in with a 5 right.
+[00:53:36 - 00:53:38] Absolutely yeah, but yeah D3, Knight out, and then a 5.
+[00:53:40 - 00:5

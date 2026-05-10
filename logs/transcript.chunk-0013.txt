@@ -1,0 +1,4 @@
+APPEND games/divya_humpy.md
+> The commentators noted Divya's resilience after a tough time in Toronto, contrasting her with Vaishali's 2024 comeback. They highlighted the psychological toll of the multi-championship format, suggesting that while youth offers stamina advantages, the physical demands of this specific event are intense enough for veterans to maintain high levels of endurance. The narrative emphasized the unique convergence of two major championships, creating a rare opportunity to witness elite competition in a setting that blends World Championship prestige with Candidates developmental focus.
+
+CURRENT_GAME=divya_humpy

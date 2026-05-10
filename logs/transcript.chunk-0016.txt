@@ -1,0 +1,4 @@
+APPEND games/caruana_nakamura.md
+Fabi's confidence is palpable, projecting an aura of invincibility that masks the uncertainty of the field. He emphasizes the tournament's unique blend of experience and first-timers, suggesting a mix of styles that makes a clear favorite elusive. The commentary notes the physical intensity of the event, noting that even seasoned veterans like Sindarov and Esipenko can maintain high levels of endurance, challenging the assumption that youth alone guarantees a stamina advantage. This psychological pressure is compounded by the sheer volume of qualifiers and the multi-championship nature of the event, which can erode confidence for even seasoned players.
+
+CURRENT_GAME=caruana_nakamura

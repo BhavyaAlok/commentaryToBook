@@ -1,0 +1,4 @@
+openai
+python-chess
+watchdog
+rich

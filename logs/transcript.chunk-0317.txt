@@ -1,0 +1,4 @@
+APPEND games/caruana_nakamura.md
+The commentators noted that Hikaru's King E7 is a "strictly worse version" of his King C7, implying he intuitively recognized the inferiority of the pawn structure without needing deep calculation. This realization likely triggered a shift in strategy, as the players moved from a complex tactical battle to a simpler positional evaluation. The discussion highlighted that the game was difficult for both sides, with Hikaru's realization suggesting he could have easily found a draw or a winning line if he had focused on the structural weakness of E7 rather than the immediate tactical threats.
+
+CURRENT_GAME=games/caruana_nakamura.md
