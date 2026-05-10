@@ -1,0 +1,2236 @@
+Tagging run started: 2026-05-10T15:28:46
+Transcript: C:\Users\Bhavy\Personal\Code\c26\transcripts\processed\transcript.txt
+Output: C:\Users\Bhavy\Personal\Code\c26\transcripts\tagged\transcript2.txt
+Window lines: 6
+Dry run: False
+
+
+===== STEP 00001 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: stageSetting
+Allowed next tags: stageSetting, breakRelated, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+(none)
+
+Current 6 lines:
+[00:02:22 - 00:02:26] Welcome to the 2026 FIDE Candidates.
+
+[00:02:26 - 00:02:29] I'm joined by our two commentators of the event,
+
+[00:02:29 - 00:02:34] Grandmasters Peter Spidler and Grandmaster Jan Gustafsson.
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+STAY
+--- END STEP ---
+
+
+===== STEP 00002 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: stageSetting
+Allowed next tags: stageSetting, breakRelated, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:02:22 - 00:02:26] Welcome to the 2026 FIDE Candidates.
+
+[00:02:26 - 00:02:29] I'm joined by our two commentators of the event,
+
+[00:02:29 - 00:02:34] Grandmasters Peter Spidler and Grandmaster Jan Gustafsson.
+
+
+Current 6 lines:
+[00:02:34 - 00:02:36] Guys, how do you feel about this event?
+
+[00:02:36 - 00:02:41] I've got nothing. This is a beautiful place.
+
+[00:02:41 - 00:02:44] We have a chess tournament that's serious.
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+STAY
+--- END STEP ---
+
+
+===== STEP 00003 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: stageSetting
+Allowed next tags: stageSetting, breakRelated, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:02:29 - 00:02:34] Grandmasters Peter Spidler and Grandmaster Jan Gustafsson.
+
+[00:02:34 - 00:02:36] Guys, how do you feel about this event?
+
+[00:02:36 - 00:02:41] I've got nothing. This is a beautiful place.
+
+[00:02:41 - 00:02:44] We have a chess tournament that's serious.
+
+
+Current 6 lines:
+[00:02:44 - 00:02:47] We have two chess tournaments that matter.
+
+[00:02:47 - 00:02:49] We have the World Championship match and this one.
+
+[00:02:49 - 00:02:52] Then there's all the noise around it.
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=stageSetting
+--- END STEP ---
+
+
+===== STEP 00004 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: stageSetting
+Allowed next tags: stageSetting, breakRelated, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:02:41 - 00:02:44] We have a chess tournament that's serious.
+
+[00:02:44 - 00:02:47] We have two chess tournaments that matter.
+
+[00:02:47 - 00:02:49] We have the World Championship match and this one.
+
+[00:02:49 - 00:02:52] Then there's all the noise around it.
+
+
+Current 6 lines:
+[00:02:52 - 00:02:56] It's such a pleasure to be here and stakes being high.
+
+[00:02:56 - 00:02:58] I'm excited for my tournaments.
+
+[00:02:58 - 00:03:02] I've always loved these tournaments.
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+STAY
+--- END STEP ---
+
+
+===== STEP 00005 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: stageSetting
+Allowed next tags: stageSetting, breakRelated, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:02:49 - 00:02:52] Then there's all the noise around it.
+
+[00:02:52 - 00:02:56] It's such a pleasure to be here and stakes being high.
+
+[00:02:56 - 00:02:58] I'm excited for my tournaments.
+
+[00:02:58 - 00:03:02] I've always loved these tournaments.
+
+
+Current 6 lines:
+[00:03:02 - 00:03:04] There's always something to enjoy.
+
+[00:03:04 - 00:03:06] There's always so many storylines.
+
+[00:03:06 - 00:03:07] The field this year, in particular,
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=stageSetting
+--- END STEP ---
+
+
+===== STEP 00006 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: stageSetting
+Allowed next tags: stageSetting, breakRelated, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:02:58 - 00:03:02] I've always loved these tournaments.
+
+[00:03:02 - 00:03:04] There's always something to enjoy.
+
+[00:03:04 - 00:03:06] There's always so many storylines.
+
+[00:03:06 - 00:03:07] The field this year, in particular,
+
+
+Current 6 lines:
+[00:03:07 - 00:03:15] I feel we've not had a field as open as we seem to have this year.
+
+[00:03:15 - 00:03:18] I've always enjoyed it for me.
+
+[00:03:18 - 00:03:22] I'm always glued to the screen even if I'm not doing anything
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+STAY
+--- END STEP ---
+
+
+===== STEP 00007 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: stageSetting
+Allowed next tags: stageSetting, breakRelated, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:03:06 - 00:03:07] The field this year, in particular,
+
+[00:03:07 - 00:03:15] I feel we've not had a field as open as we seem to have this year.
+
+[00:03:15 - 00:03:18] I've always enjoyed it for me.
+
+[00:03:18 - 00:03:22] I'm always glued to the screen even if I'm not doing anything
+
+
+Current 6 lines:
+[00:03:22 - 00:03:23] to do with the event.
+
+[00:03:23 - 00:03:25] You're always glued to the screen.
+
+[00:03:25 - 00:03:27] I am very much glued to the screen regardless.
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=stageSetting
+--- END STEP ---
+
+
+===== STEP 00008 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: stageSetting
+Allowed next tags: stageSetting, breakRelated, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:03:18 - 00:03:22] I'm always glued to the screen even if I'm not doing anything
+
+[00:03:22 - 00:03:23] to do with the event.
+
+[00:03:23 - 00:03:25] You're always glued to the screen.
+
+[00:03:25 - 00:03:27] I am very much glued to the screen regardless.
+
+
+Current 6 lines:
+[00:03:27 - 00:03:33] That is maybe not as much a point of pride as I'm making it out to be.
+
+[00:03:33 - 00:03:39] I'm very happy to be here and to watch it live and to comment on it.
+
+[00:03:39 - 00:03:43] One of the big storylines running is we have this younger generation,
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=divya_anna_muzychuk
+--- END STEP ---
+
+
+===== STEP 00009 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: divya_anna_muzychuk
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:03:25 - 00:03:27] I am very much glued to the screen regardless.
+
+[00:03:27 - 00:03:33] That is maybe not as much a point of pride as I'm making it out to be.
+
+[00:03:33 - 00:03:39] I'm very happy to be here and to watch it live and to comment on it.
+
+[00:03:39 - 00:03:43] One of the big storylines running is we have this younger generation,
+
+
+Current 6 lines:
+[00:03:43 - 00:03:48] this 26-and-below for half of the open field
+
+[00:03:48 - 00:03:52] and then this 26-year-old and above for the rest of the field.
+
+[00:03:52 - 00:03:56] How do you guys think of that when approaching this?
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00010 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:03:39 - 00:03:43] One of the big storylines running is we have this younger generation,
+
+[00:03:43 - 00:03:48] this 26-and-below for half of the open field
+
+[00:03:48 - 00:03:52] and then this 26-year-old and above for the rest of the field.
+
+[00:03:52 - 00:03:56] How do you guys think of that when approaching this?
+
+
+Current 6 lines:
+[00:03:56 - 00:03:59] Do the younger players have this advantage of maybe having more stamina
+
+[00:03:59 - 00:04:02] or is it the experienced players that will have more of an advantage
+
+[00:04:02 - 00:04:04] or does that matter at all?
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+STAY
+--- END STEP ---
+
+
+===== STEP 00011 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:03:52 - 00:03:56] How do you guys think of that when approaching this?
+
+[00:03:56 - 00:03:59] Do the younger players have this advantage of maybe having more stamina
+
+[00:03:59 - 00:04:02] or is it the experienced players that will have more of an advantage
+
+[00:04:02 - 00:04:04] or does that matter at all?
+
+
+Current 6 lines:
+[00:04:04 - 00:04:06] It does matter a great deal, I think, in this tournament.
+
+[00:04:06 - 00:04:12] Stamina is maybe the one thing that often separates the winners from the non-winners.
+
+[00:04:13 - 00:04:15] Weirdly, I think you actually...
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00012 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:04:02 - 00:04:04] or does that matter at all?
+
+[00:04:04 - 00:04:06] It does matter a great deal, I think, in this tournament.
+
+[00:04:06 - 00:04:12] Stamina is maybe the one thing that often separates the winners from the non-winners.
+
+[00:04:13 - 00:04:15] Weirdly, I think you actually...
+
+
+Current 6 lines:
+[00:04:15 - 00:04:18] I mean, it stops working after a certain point,
+
+[00:04:18 - 00:04:23] but I find that you actually become sort of...
+
+[00:04:23 - 00:04:28] There's more stamina in a 35-year-old than maybe in a 20-year-old.
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00013 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:04:13 - 00:04:15] Weirdly, I think you actually...
+
+[00:04:15 - 00:04:18] I mean, it stops working after a certain point,
+
+[00:04:18 - 00:04:23] but I find that you actually become sort of...
+
+[00:04:23 - 00:04:28] There's more stamina in a 35-year-old than maybe in a 20-year-old.
+
+
+Current 6 lines:
+[00:04:28 - 00:04:31] I don't know if you disagree with that, but my feeling is people actually...
+
+[00:04:31 - 00:04:35] Like, you build that muscle, you know what works for you,
+
+[00:04:35 - 00:04:40] you know how to pace yourself for a tournament as long as it's as difficult as this.
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00014 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:04:23 - 00:04:28] There's more stamina in a 35-year-old than maybe in a 20-year-old.
+
+[00:04:28 - 00:04:31] I don't know if you disagree with that, but my feeling is people actually...
+
+[00:04:31 - 00:04:35] Like, you build that muscle, you know what works for you,
+
+[00:04:35 - 00:04:40] you know how to pace yourself for a tournament as long as it's as difficult as this.
+
+
+Current 6 lines:
+[00:04:40 - 00:04:46] So, yeah, in pure stamina terms, I'm actually picking the older guys.
+
+[00:04:46 - 00:04:49] And you were the commentator of the World Cup.
+
+[00:04:49 - 00:04:52] You got to witness the three qualifiers from the World Cup,
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00015 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:04:35 - 00:04:40] you know how to pace yourself for a tournament as long as it's as difficult as this.
+
+[00:04:40 - 00:04:46] So, yeah, in pure stamina terms, I'm actually picking the older guys.
+
+[00:04:46 - 00:04:49] And you were the commentator of the World Cup.
+
+[00:04:49 - 00:04:52] You got to witness the three qualifiers from the World Cup,
+
+
+Current 6 lines:
+[00:04:52 - 00:04:56] and they were all young people playing throughout this three-week-long event.
+
+[00:04:56 - 00:04:59] What was your insider view and opinion
+
+[00:04:59 - 00:05:05] when seeing those first of all young players go so far in qualifying for the candidates?
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00016 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:04:49 - 00:04:52] You got to witness the three qualifiers from the World Cup,
+
+[00:04:52 - 00:04:56] and they were all young people playing throughout this three-week-long event.
+
+[00:04:56 - 00:04:59] What was your insider view and opinion
+
+[00:04:59 - 00:05:05] when seeing those first of all young players go so far in qualifying for the candidates?
+
+
+Current 6 lines:
+[00:05:06 - 00:05:09] Frankly, I think it's a bit random.
+
+[00:05:09 - 00:05:14] I believe more in rating than in age.
+
+[00:05:14 - 00:05:18] And for example, Sinderov is young, but he also just seems very, very good.
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00017 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:04:59 - 00:05:05] when seeing those first of all young players go so far in qualifying for the candidates?
+
+[00:05:06 - 00:05:09] Frankly, I think it's a bit random.
+
+[00:05:09 - 00:05:14] I believe more in rating than in age.
+
+[00:05:14 - 00:05:18] And for example, Sinderov is young, but he also just seems very, very good.
+
+
+Current 6 lines:
+[00:05:18 - 00:05:23] Of course, in a World Cup, you could argue stamina matters even more with this constant
+
+[00:05:23 - 00:05:26] switching rhythms and very few rest days.
+
+[00:05:26 - 00:05:29] Well, here it's more of a quote-unquote normal tournament,
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00018 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:05:14 - 00:05:18] And for example, Sinderov is young, but he also just seems very, very good.
+
+[00:05:18 - 00:05:23] Of course, in a World Cup, you could argue stamina matters even more with this constant
+
+[00:05:23 - 00:05:26] switching rhythms and very few rest days.
+
+[00:05:26 - 00:05:29] Well, here it's more of a quote-unquote normal tournament,
+
+
+Current 6 lines:
+[00:05:29 - 00:05:34] but yet for this debate about experience versus use
+
+[00:05:34 - 00:05:38] and in what format pickier like Kamsky won the World Cup,
+
+[00:05:38 - 00:05:42] Gelfand won the World Cup, they weren't exactly kids when they won it.
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00019 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:05:26 - 00:05:29] Well, here it's more of a quote-unquote normal tournament,
+
+[00:05:29 - 00:05:34] but yet for this debate about experience versus use
+
+[00:05:34 - 00:05:38] and in what format pickier like Kamsky won the World Cup,
+
+[00:05:38 - 00:05:42] Gelfand won the World Cup, they weren't exactly kids when they won it.
+
+
+Current 6 lines:
+[00:05:42 - 00:05:45] So I think good players will have good results.
+
+[00:05:45 - 00:05:50] And here, I don't know, Hikaru is by far the oldest, he's 38 or whatever,
+
+[00:05:50 - 00:05:54] but he seems to have endless energy from what I can see now.
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00020 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:05:38 - 00:05:42] Gelfand won the World Cup, they weren't exactly kids when they won it.
+
+[00:05:42 - 00:05:45] So I think good players will have good results.
+
+[00:05:45 - 00:05:50] And here, I don't know, Hikaru is by far the oldest, he's 38 or whatever,
+
+[00:05:50 - 00:05:54] but he seems to have endless energy from what I can see now.
+
+
+Current 6 lines:
+[00:05:54 - 00:05:56] So I'm also not sure it's a...
+
+[00:05:56 - 00:06:01] You think also where you draw the line, I'm not sure, like Prague is whatever,
+
+[00:06:01 - 00:06:05] 20, but he's been around here seems like an experienced player to me
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00021 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:05:50 - 00:05:54] but he seems to have endless energy from what I can see now.
+
+[00:05:54 - 00:05:56] So I'm also not sure it's a...
+
+[00:05:56 - 00:06:01] You think also where you draw the line, I'm not sure, like Prague is whatever,
+
+[00:06:01 - 00:06:05] 20, but he's been around here seems like an experienced player to me
+
+
+Current 6 lines:
+[00:06:05 - 00:06:06] and Wei Yi is somewhere in the middle.
+
+[00:06:06 - 00:06:12] So it's really only Fabi Hikaru and maybe Anish to some extent,
+
+[00:06:12 - 00:06:17] as for the veterans, but also Fabi and Anisha, 33 and 31.
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00022 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:06:01 - 00:06:05] 20, but he's been around here seems like an experienced player to me
+
+[00:06:05 - 00:06:06] and Wei Yi is somewhere in the middle.
+
+[00:06:06 - 00:06:12] So it's really only Fabi Hikaru and maybe Anish to some extent,
+
+[00:06:12 - 00:06:17] as for the veterans, but also Fabi and Anisha, 33 and 31.
+
+
+Current 6 lines:
+[00:06:17 - 00:06:23] Felt a bit of a gap in whatever people that would be in their late 20s, mid 20s now.
+
+[00:06:23 - 00:06:28] And we have the generation of Alireza, Gukesh, Prague,
+
+[00:06:28 - 00:06:33] Kaimer, Abdul-Satorov, Sinderov, sure, I'm forgetting one or two.
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00023 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:06:12 - 00:06:17] as for the veterans, but also Fabi and Anisha, 33 and 31.
+
+[00:06:17 - 00:06:23] Felt a bit of a gap in whatever people that would be in their late 20s, mid 20s now.
+
+[00:06:23 - 00:06:28] And we have the generation of Alireza, Gukesh, Prague,
+
+[00:06:28 - 00:06:33] Kaimer, Abdul-Satorov, Sinderov, sure, I'm forgetting one or two.
+
+
+Current 6 lines:
+[00:06:33 - 00:06:38] That just is extremely strong, but I'm not sure we can just put it to age.
+
+[00:06:38 - 00:06:39] These guys are just good.
+
+[00:06:39 - 00:06:45] What a world we're living in when Anish is in the very much in the top half of this equation.
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00024 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:06:28 - 00:06:33] Kaimer, Abdul-Satorov, Sinderov, sure, I'm forgetting one or two.
+
+[00:06:33 - 00:06:38] That just is extremely strong, but I'm not sure we can just put it to age.
+
+[00:06:38 - 00:06:39] These guys are just good.
+
+[00:06:39 - 00:06:45] What a world we're living in when Anish is in the very much in the top half of this equation.
+
+
+Current 6 lines:
+[00:06:45 - 00:06:46] I think first...
+
+[00:06:46 - 00:06:48] Well in his 30s.
+
+[00:06:48 - 00:06:50] Yeah, I understand, but he's always...
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00025 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:06:39 - 00:06:45] What a world we're living in when Anish is in the very much in the top half of this equation.
+
+[00:06:45 - 00:06:46] I think first...
+
+[00:06:46 - 00:06:48] Well in his 30s.
+
+[00:06:48 - 00:06:50] Yeah, I understand, but he's always...
+
+
+Current 6 lines:
+[00:06:50 - 00:06:51] Three kids.
+
+[00:06:52 - 00:06:54] That is hurtful.
+
+[00:06:55 - 00:07:02] And well, another storyline coming into this is, you know, the younger players,
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00026 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:06:48 - 00:06:50] Yeah, I understand, but he's always...
+
+[00:06:50 - 00:06:51] Three kids.
+
+[00:06:52 - 00:06:54] That is hurtful.
+
+[00:06:55 - 00:07:02] And well, another storyline coming into this is, you know, the younger players,
+
+
+Current 6 lines:
+[00:07:02 - 00:07:06] they have almost no experience in this candidate's format.
+
+[00:07:06 - 00:07:10] This is very long, but it's also double round Robin.
+
+[00:07:10 - 00:07:13] You're playing against all these strong players two times.
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00027 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:06:55 - 00:07:02] And well, another storyline coming into this is, you know, the younger players,
+
+[00:07:02 - 00:07:06] they have almost no experience in this candidate's format.
+
+[00:07:06 - 00:07:10] This is very long, but it's also double round Robin.
+
+[00:07:10 - 00:07:13] You're playing against all these strong players two times.
+
+
+Current 6 lines:
+[00:07:13 - 00:07:21] How does that experience of the strong players might translate into this tournament of a Fabi or Hikaru
+
+[00:07:21 - 00:07:27] over these young players who have never experienced this type of double round Robin?
+
+[00:07:27 - 00:07:32] I think there's something to it that it's hard to win the first time around,
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---
+
+
+===== STEP 00028 =====
+You are detecting topic switches in a chess broadcast transcript.
+
+Current active tag: uncertain
+Allowed next tags: breakRelated, uncertain, sindarov_esipenko, bluebaum_wei, praggnanandhaa_giri, caruana_nakamura, divya_anna_muzychuk, vaishali_bibisara, goryachkina_lagno, zhu_tan
+
+Game tags:
+- sindarov_esipenko: Open: Javokhir Sindarov vs Andrey Esipenko. Hints: Sindarov, Javokhir, Esipenko, Andrey.
+- bluebaum_wei: Open: Matthias Bluebaum vs Wei Yi. Hints: Bluebaum, Matthias, Wei, Wei Yi.
+- praggnanandhaa_giri: Open: Praggnanandhaa R. vs Anish Giri. Hints: Pragg, Praggnanandhaa, Giri, Anish.
+- caruana_nakamura: Open: Fabiano Caruana vs Hikaru Nakamura. Hints: Fabi, Fabio, Fabiano, Caruana, Hikaru, Nakamura.
+- divya_anna_muzychuk: Women: Divya Deshmukh vs Anna Muzychuk. Hints: Divya, Deshmukh, Anna Muzychuk, Anna.
+- vaishali_bibisara: Women: Vaishali Rameshbabu vs Bibisara Assaubayeva. Hints: Vaishali, Rameshbabu, Bibisara, Assaubayeva.
+- goryachkina_lagno: Women: Aleksandra Goryachkina vs Kateryna Lagno. Hints: Goryachkina, Aleksandra, Lagno, Kateryna.
+- zhu_tan: Women: Zhu Jiner vs Tan Zhongyi. Hints: Zhu, Jiner, Tan, Zhongyi.
+
+Previous few lines, for continuity only:
+[00:07:10 - 00:07:13] You're playing against all these strong players two times.
+
+[00:07:13 - 00:07:21] How does that experience of the strong players might translate into this tournament of a Fabi or Hikaru
+
+[00:07:21 - 00:07:27] over these young players who have never experienced this type of double round Robin?
+
+[00:07:27 - 00:07:32] I think there's something to it that it's hard to win the first time around,
+
+
+Current 6 lines:
+[00:07:32 - 00:07:39] although Magnus did it, but he's Magnus, but like NBA playoffs where you have to get knocked out once or twice
+
+[00:07:39 - 00:07:45] in order to have that sort of experience, but I'm not sure it adds up after your fifth or sixth participation.
+
+[00:07:45 - 00:07:51] Like Fabi especially played a lot, but he's been competitive in them
+
+
+Task:
+Decide whether these current lines explicitly switch away from the current active tag.
+
+Very important rules:
+- Usually answer STAY.
+- A switch means the live broadcast focus moved to a CURRENT ROUND board. It does not mean a player, opening, or old game was merely mentioned.
+
+Rules when current tag is stageSetting:
+- Stay stageSetting for previews, standings, player biographies, experience comparisons, predictions, prize money, format discussion, prior performance, head-to-head records, under-the-radar picks, and general psychology.
+- Do NOT switch just because players are named.
+- These are stageSetting, not game coverage: "Bluebaum has the best score against the field", "the great Bluebaum sweep", "Esipenko/Sindarov have never played", "which player is flying under the radar", "we will see how you can stop him".
+- Switch out of stageSetting only when live games actually start or the broadcast unmistakably moves to a live board.
+- Valid kickoff clues: "first move", "make the first move", "kickoff", "liftoff", "the games have started", "we have moves", "on the board", "he/she plays d4/e4/Nf3", "let's go to the first board", "let's look at the position after the first moves".
+- Never use uncertain during stageSetting.
+
+Rules when current tag is a game:
+- Stay on the current game while commentators discuss plans, psychology, clock pressure, old games, preparation, opening history, or reference games related to the current position.
+- Do NOT switch because another player's name appears in a comparison or historical reference.
+- Switch to another game only on an explicit live-board transition: "let's look at X's game", "on the X-Y board", "meanwhile in X's game", "X has just played...", "now to the women's game between X and Y".
+- Use SWITCH_TO=uncertain only if a live-board transition definitely happens but no board/player is identifiable, e.g. "let's look at this board" or "let's check the other boards" with no names.
+
+Rules when current tag is uncertain:
+- Stay uncertain until a live current-game clue identifies the board.
+- If the next lines identify a player or move on a current board, switch directly to that game. Example: "Anna played d4" => divya_anna_muzychuk.
+- Do not stay uncertain once the board is identifiable.
+
+Rules when current tag is breakRelated:
+- Stay breakRelated through break/interview/filler content.
+- Leave breakRelated only on clear return to live chess such as "welcome back", "we are back", "back to the games", or direct board commentary.
+
+Global cautions:
+- Once stageSetting is over, stageSetting is not allowed.
+- If there is any doubt whether live board coverage has started, answer STAY.
+- If there is any doubt whether a board switch happened, answer STAY.
+- Breaks start on clear telegraphs like "quick break", "take a break", "we'll be back", "after the break".
+
+Output exactly one line:
+STAY
+or
+SWITCH_TO=<one allowed tag>
+
+--- RESPONSE ---
+SWITCH_TO=uncertain
+--- END STEP ---

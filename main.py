@@ -89,7 +89,7 @@ PLAYER_HINTS = {
     "bluebaum_wei": ("bluebaum", "matthias", "wei yi"),
     "praggnanandhaa_giri": ("pragg", "praggnanandhaa", "giri", "anish"),
     "caruana_nakamura": ("fabi", "fabio", "fabiano", "caruana", "hikaru", "nakamura"),
-    "divya_humpy": ("divya", "deshmukh", "humpy", "koneru"),
+    "divya_anna_muzychuk": ("divya", "deshmukh", "anna muzy", "anna muzyuk", "anna muzychuk"),
     "vaishali_bibisara": ("vaishali", "rameshbabu", "bibisara", "assaubayeva"),
     "goryachkina_lagno": ("goryachkina", "aleksandra", "lagno", "kateryna"),
     "zhu_tan": ("zhu", "jiner", "tan zhongyi", "zhongyi"),
